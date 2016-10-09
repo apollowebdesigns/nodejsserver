@@ -29,7 +29,7 @@ function activateGpio() {
 
   var motor1A = 16;
   var motor1B = 18;
-  var motor1C = 22;
+  var motor1E = 22;
 
   function piStart (pinNumber) {
     gpio.open(pinNumber, "output", function(err) {		// Open pin XX for output 
@@ -41,13 +41,13 @@ function activateGpio() {
 
   piStart(motor1A);
   piStart(motor1B);
-  piStart(motor1C);
+  piStart(motor1E);
 
-  gpio.open(16, "output", function(err) {		// Open pin 16 for output 
-    gpio.write(16, 1, function() {			// Set pin 16 high (1) 
-        gpio.close(16);						// Close pin 16 
-    });
-  });
+  //gpio.open(16, "output", function(err) {		// Open pin 16 for output 
+  //  gpio.write(16, 1, function() {			// Set pin 16 high (1) 
+  //      gpio.close(16);						// Close pin 16 
+  //  });
+  //});
   for (var i = 0; i < 10; i++) {
     console.log('the function was hit');
     console.log(i);
