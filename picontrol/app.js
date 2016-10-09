@@ -25,6 +25,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
+function activateGpio() {
+  for (var i = 0; i < 10; i++) {
+    console.log('the function was hit');
+    console.log(i);
+  }
+  return 'the function was hit';
+}
+
+app.get('/hits', function (req, res) {
+  res.send(activateGpio());
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
