@@ -1,0 +1,27 @@
+{
+  "name": "nodejsserver",
+  "version": "1.0.0",
+  "description": "for the raspberry pi",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-generator": "^4.13.4",
+    "pi-gpio": "^0.0.8"
+  },
+  "devDependencies": {
+    "pi-gpio": "0.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apollowebdesigns/nodejsserver.git"
+  },
+  "author": "andy evans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apollowebdesigns/nodejsserver/issues"
+  },
+  "homepage": "https://github.com/apollowebdesigns/nodejsserver#readme"
+}
